@@ -1,0 +1,25 @@
+server:
+  port: 9000
+  servlet:
+    context-path: /core-code-java-example
+
+management:
+  server:
+    port: 5001
+  info:
+    git:
+      enabled: true
+    build:
+      enabled: true
+  endpoints:
+    web:
+      exposure: { include: "health,info,env,metrics,httptrace" }
+  metrics:
+    distribution:
+      percentiles-histogram: { http.server.requests: true }
+      percentiles: { http.server.requests: "0.50, 0.95, 0.99" }
+    export:
+      cloudwatch:
+        { namespace: spring-boot-application, enabled: false, batch-size: 20 }
+    web:
+      server: { auto-time-requests: true }

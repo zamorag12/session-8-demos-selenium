@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TestAll">
+    <test name="google">
+        <groups>
+            <run>
+                <exclude name="intermediate"/>
+                <include name="basic"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.corecodeqa.scenarios.SampleTest"/>
+        </classes>
+    </test>
+    <test name="inventory-system-login">
+        <groups>
+            <run>
+                <exclude name="basic"/>
+                <include name="intermediate"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.corecodeqa.scenarios.SampleTest"/>
+        </classes>
+    </test>
+</suite>
