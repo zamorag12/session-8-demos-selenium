@@ -25,7 +25,7 @@ class SampleTestCases(unittest.TestCase):
                 SELECTED_BROWSWER = varReceived[1]
 
         self.driver = returnDriverFromManager(self, SELECTED_BROWSWER)
-        self.baseUrl = 'https://corecode-qa-bootcamp-site.herokuapp.com/login.php'
+        self.baseUrl = 'https://thenuxcrew.com/corecode/login.php'
 
     def tearDown(self):
         self.driver.quit()

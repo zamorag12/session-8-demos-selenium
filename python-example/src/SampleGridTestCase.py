@@ -44,7 +44,7 @@ class SampleTestCases(unittest.TestCase):
 
         self.driver = webdriver.Remote(
             command_executor=sauce_url, options=options)
-        self.baseUrl = 'https://corecode-qa-bootcamp-site.herokuapp.com/login.php'
+        self.baseUrl = 'https://thenuxcrew.com/corecode/login.php'
 
     def tearDown(self):
         self.driver.quit()
