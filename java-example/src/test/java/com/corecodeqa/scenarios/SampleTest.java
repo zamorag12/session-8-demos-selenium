@@ -19,7 +19,7 @@ import static java.util.concurrent.TimeUnit.SECONDS;
 public class SampleTest {
     private WebDriver driver;
     private static final String DEFAULT_BROWSER = "CHROME";
-    private static final String BASE_URL_INVENTORY_SYSTEM = "https://corecode-qa-bootcamp-site.herokuapp.com/login.php";
+    private static final String BASE_URL_INVENTORY_SYSTEM = "https://thenuxcrew.com/corecode/login.php";
     private static final String USERNAME_SELECTOR_BY_NAME = "user_name";
     private static final String PASSWORD_SELECTOR_BY_NAME = "user_password";
 
